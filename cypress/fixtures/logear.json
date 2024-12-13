@@ -1,0 +1,23 @@
+{
+    "loginOK":{
+        "userName":"standard_user",
+        "password":"secret_sauce"
+    },
+    "loginUsernameEmpty":{
+        "userName":"  ",
+        "password":"secret_sauce"
+    },
+    "loginPasswordEmpty":{
+        "userName":"standard_user",
+        "password":"  "
+    },
+    "loginEmpty":{
+        "userName":"  ",
+        "password":"  "
+    },
+    "loginProblemUser":{
+        "userName":"problem_user",
+        "password":"secret_sauce"
+    }
+
+}

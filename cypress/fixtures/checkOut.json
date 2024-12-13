@@ -1,0 +1,17 @@
+{
+    "chkValid":{
+     "firstName":"Pedro",  
+     "lastName":"Guitierrez",
+     "postalCode":"2231" 
+    },
+    "chkInvalid":{
+     "firstName":" ",  
+     "lastName":" ",
+     "postalCode":"  " 
+    },
+    "chkProblemUser":{
+        "firstName":"Agustin ",  
+        "lastName":"Guitierrez",
+        "postalCode":"2020" 
+       }
+}
