@@ -94,7 +94,7 @@ Cypress.Commands.add('clickFinish', () => {
 })
 Cypress.Commands.add('clickBackHome', () => {
         cy.wait(2000)
-        cy.get('#checkout').should('exist').click()  
+        cy.get('#back-to-products').should('exist').click()  
 })
 //
 Cypress.Commands.add('LoginProblemUser', () => {

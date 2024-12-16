@@ -26,9 +26,6 @@ describe('Validacion de Login',{testIsolation:false},()=>{
 })
 describe('Verificacion de agregar productos',{testIsolation: false},()=>{
     it( 'Precondiciones',()=>{
-        cy.clearCookies();
-        cy.clearLocalStorage();
-        cy,wait(5000)
         cy.visit('https://www.saucedemo.com')
         cy.loginSuccessfull(); 
         cy.url().should('include', '/inventory.html');
@@ -41,7 +38,7 @@ it('Agregar productos al carrito',()=>{
     cy.verifyQCart(3)//Verificar la cantidad de productos agregados al carrito
     })
     it('Elimnar productos al carrito',()=>{
-        cy.wait(1000)
+        cy.wait(2000)
         cy.removeToCart(0)
         cy.removeToCart(1)
         cy.verifyQCart(1)//Verificar la cantidad de productos agregados al carrito
@@ -77,8 +74,6 @@ describe('Validar el funcionamiento del CheckOut',{ testIsolation: false },()=>{
 })
 describe('Validar el CheckOutOneAndTwo',{ testIsolation: false },()=>{
     it('Precondiciones',()=>{
-        cy.clearLocalStorage()
-        cy.clearCookies()
         cy.visit('https://www.saucedemo.com')
         cy.loginSuccessfull(); 
         cy.addToCart(0)
